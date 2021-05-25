@@ -23,6 +23,9 @@ const mongooseConnect=async()=>{
    
 }
 mongooseConnect()
+app.get('/',(req,res)=>{
+    res.send("Welcome to Node js backend project")
+})
 app.use(basicAuth)
  app.use("/api",userData)
 
