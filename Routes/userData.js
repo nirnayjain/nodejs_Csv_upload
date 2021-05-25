@@ -20,7 +20,7 @@ User.insertMany(details).then(function(){
     res.send("Ok")
    
 })
-})
+}).catch((error)=>{console.log((error))})
 })
 //Creating one
 router.post('/createOne',express.json(),async(req,res)=>{
